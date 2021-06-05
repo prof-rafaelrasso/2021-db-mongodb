@@ -1,0 +1,9 @@
+
+// Ordena os clientes pelo nome de forma crescente
+db.clientes.find().sort( { "nome": 1 });
+
+// Ordena os clientes pelo nome de forma decrecente
+db.clientes.find().sort( { "nome": -1 });
+
+// Ordena os clientes pelo logradouro de forma crescente
+db.clientes.find().sort( { "endereco.logradouro": 1 });

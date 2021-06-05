@@ -1,0 +1,8 @@
+// esse update eh mais recomendado pois vai substituir apenas o cpf e os demais campos nao serao afetados.
+
+db.clientes.update({
+    "_id": ObjectId("60bbee68370a27109ac87b64")
+}, {
+    $set: { "cpf": "111111111" }
+});
+

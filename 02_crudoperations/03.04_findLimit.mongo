@@ -1,0 +1,6 @@
+
+// Retorna os primeiros 5 resultados encontrados
+db.clientes.find().limit(5);
+
+// Retorna os 3 primeiros resultados apos ordenar pelo logradouro
+db.clientes.find().sort( { "endereco.logradouro": 1 }).limit(3);

@@ -1,11 +1,12 @@
-// inserindo um dado com a funcao insert
+// vai substituir completamente o documento encontrado para o id informado, devemos 
+// tomar cuidado com essa forma de update foi se esquecermos algum dado ele sumira dos registros.
 
-db.clientes.insert({
-    "nome": "Rafael",
+// o primeiro parametro eh o filtro que sera usado, o segundo sao os novos valores (o novo documento)
+db.clientes.update({
+    "_id": ObjectId("60bbee68370a27109ac87b64")
+}, {
     "cpf": "0000000000",
     "rg": "00000000",
-    "nascimento": new Date(1991,09,15),
-    "sexo": "Masculino",
     "endereco": {
         "logradouro": "Rua Vinicius de Carvalho",
         "numero": 172,

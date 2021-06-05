@@ -1,2 +1,33 @@
 // lista todos os clientes inseridos na colecao 
 db.clientes.find();
+
+// lista todos clientes cujo o nome seja exatamente Rafael
+db.clientes.find({
+ "nome": "Rafael"
+});
+
+// lista todos clientes cujo nome seja exatamente Marila e (AND) o cpf seja 0000000002 
+db.clientes.find({
+ "nome": "Marilia",
+ "cpf": "0000000002"
+});
+
+// lista todos clientes cujo logradouro seja a Rua Vinicius de Carvalho
+db.clientes.find({
+ "endereco.logradouro": "Rua Vinicius de Carvalho"
+});
+
+// lista todos os clientes cujo a cidade se chame São Paulo
+db.clientes.find({
+    "endereco.cidade.nome": "São Paulo"
+});
+
+// lista todos os clientes Paranaenses
+db.clientes.find({
+    "endereco.cidade.estado.uf": "PR"
+})
+
+// busca cliente pelo id
+db.clientes.find({
+    "_id": ObjectId("60bbd94b8cef5bb3c4371335")
+})

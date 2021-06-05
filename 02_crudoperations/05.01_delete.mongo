@@ -1,0 +1,4 @@
+db.clientes.remove({
+    "_id": ObjectId("60bbee68370a27109ac87b64")
+});
+

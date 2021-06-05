@@ -1,0 +1,33 @@
+// lista o primeiro cliente que encontrar
+db.clientes.findOne();
+
+// lista o primeiro cliente que encontrar com o nome de Rafael
+db.clientes.findOne({
+ "nome": "Rafael"
+});
+
+// lista o primeiro cliente que encontrar cujo nome seja exatamente Marila e (AND) o cpf seja 0000000002 
+db.clientes.findOne({
+ "nome": "Marilia",
+ "cpf": "0000000002"
+});
+
+// lista o primeiro cliente que encontrar cujo logradouro seja a Rua Vinicius de Carvalho
+db.clientes.findOne({
+ "endereco.logradouro": "Rua Vinicius de Carvalho"
+});
+
+// lista o primeiro cliente que encontrar cujo a cidade se chame São Paulo
+db.clientes.findOne({
+    "endereco.cidade.nome": "São Paulo"
+});
+
+// lista o primeiro cliente paranaense encontrado
+db.clientes.findOne({
+    "endereco.cidade.estado.uf": "PR"
+})
+
+// lista o primeiro cliente encontrado para o id informado
+db.clientes.findOne({
+    "_id": ObjectId("60bbd94b8cef5bb3c4371335")
+})

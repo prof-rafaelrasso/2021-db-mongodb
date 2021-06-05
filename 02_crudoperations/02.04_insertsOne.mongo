@@ -4,10 +4,10 @@ db.clientes.insertOne({
     "nome": "Rafael 6",
     "cpf": "0000000000",
     "rg": "00000000",
-    "nascimento": new Date(1991,28,10),
+    "nascimento": new Date(1991,09,27),
     "sexo": "Masculino",
     "endereco": {
-        "logadouro": "Rua Vinicius de Carvalho",
+        "logradouro": "Rua Vinicius de Carvalho",
         "numero": 172,
         "cep": "87200-000",
         "complemento": "Apto 122",
