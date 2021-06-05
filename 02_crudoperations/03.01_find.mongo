@@ -1,0 +1,2 @@
+// lista todos os clientes inseridos na colecao 
+db.clientes.find();

@@ -1,7 +1,7 @@
 // insert de multiplos registros com a funcao insertMany
 
 db.clientes.insertMany([{
-    "nome": "Rafael 4",
+    "nome": "Jenry",
     "cpf": "0000000000",
     "rg": "00000000",
     "nascimento": new Date(1991,28,10),
@@ -21,11 +21,11 @@ db.clientes.insertMany([{
         }
     }
 }, {
-    "nome": "Rafael 5",
+    "nome": "Leticia",
     "cpf": "0000000000",
     "rg": "00000000",
     "nascimento": new Date(1991,28,10),
-    "sexo": "Masculino",
+    "sexo": "Feminino",
     "endereco": {
         "logadouro": "Rua Vinicius de Carvalho",
         "numero": 172,
