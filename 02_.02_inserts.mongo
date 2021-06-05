@@ -1,0 +1,43 @@
+//insert de multiplos dados com a funcao insert
+
+db.clientes.insert([{
+    "nome": "Marilia",
+    "cpf": "0000000001",
+    "rg": "00000001",
+    "nascimento": new Date(1991,28,10),
+    "sexo": "Feminino",
+    "endereco": {
+        "logadouro": "Rua Vinicius de Moraes",
+        "numero": 173,
+        "cep": "87201-000",
+        "complemento": "Apto 123",
+        "bairro": "Zona 09",
+        "cidade": {
+            "nome" : "Cianorte",
+            "estado": {
+                "nome": "Paraná",
+                "uf": "PR"
+            }
+        }
+    }
+}, {
+    "nome": "Rubens",
+    "cpf": "0000000003",
+    "rg": "00000003",
+    "nascimento": new Date(1991,28,10),
+    "sexo": "Masculino",
+    "endereco": {
+        "logadouro": "Av Mauro de Carvalho",
+        "numero": 72,
+        "cep": "89200-000",
+        "complemento": null,
+        "bairro": "Freguezia do O",
+        "cidade": {
+            "nome" : "São Paulo",
+            "estado": {
+                "nome": "São Paulo",
+                "uf": "sp"
+            }
+        }
+    }
+}]);
